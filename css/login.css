@@ -1,0 +1,242 @@
+body{
+    margin:0;
+    padding:0;
+    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:1rem;
+    line-height: 1.2;
+}
+
+/*HEADER*/
+header{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 180px;
+}
+
+header .container{
+    margin: 10px;
+    padding: 5px;
+    background-color: #2F4F4F;
+    display: flex;
+    box-shadow: 0 0 5px #000000;
+}
+
+header .container .logo{
+    display: flex;
+    align-items:left;
+    justify-content: left;
+}
+
+header .container nav{
+    display: flex;
+    width:90%;
+    justify-content: space-between;
+}
+
+header .container nav .navbar{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    width:45%;
+}
+
+header .container nav .navbar li{
+    list-style-type:none;
+    display:inline-block;
+    margin:0 8px 0 8px;
+}
+
+header .container nav .navbar li a{
+    color:#ffffff;
+    text-decoration:none;
+    transition:color 0.2s ;
+}
+
+header .container nav .navbar li a:hover{
+    color:#FFD700;
+}
+
+header .basket-shopping{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .basket-shopping a{
+    font-size:35px;
+    transition:scale 0.3s;
+}
+
+header .basket-shopping a:hover{
+    scale:1.10;
+}
+
+header .basket-shopping a:active{
+    scale:0.95;
+}
+
+header .log-reg{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    width:20%;
+}
+
+header .log-reg a{
+    display: flex;
+    color:#ffffff;
+    text-decoration:none;
+    margin:0 8px 0 8px;
+    border:1px solid #ffffff;
+    padding:6px;
+    transition:scale 0.3s;
+    box-shadow:0 2px 3px #000000;
+}
+
+header .log-reg a:hover{
+    scale: 1.10;
+    border:1px solid #FFD700;
+    background:linear-gradient(#2F4F4F,#FFD700);
+    box-shadow:0 5px 5px #000000;
+}
+header .log-reg a:active{
+    scale: 0.95;
+}
+
+header .Search{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    width:25%;
+}
+
+/*RESPONSIVE DESIGN*/
+@media(max-width:992px){
+    .container nav .navbar,
+    .container nav .log-reg,
+    .container nav .basket-shopping{
+        width:50%;
+        font-size: 15px;
+        display: grid;
+    }
+
+    .container .logo img{
+        width:150px;
+        height:150px;
+    }
+
+    .container .Search{
+        display: none;
+    }
+}
+
+.section-1 .container{
+    margin: 5px 10px;
+    background-color: #2F4F4F;
+    height: 500px;
+    display: block;
+    justify-content:center;
+    align-items:center;
+    border: 1px solid black;
+    padding: 15px;
+    box-shadow: 0 0 5px #000;
+}
+
+.section-1 .container h2{
+    font-size:30px;
+    color:#fff;
+}
+
+.section-1 .container .in-container{
+    display: flex;
+    margin: 5px 10px;
+    padding: 10px;
+    border: 1px solid black;
+    box-shadow: 0 0 5px #000;
+    background-color: aquamarine;
+    border-radius:20px;
+}
+
+.section-1 .container .form{
+    align-items:center;
+    height: 300px;
+    width: 50%;
+}
+
+.section-1 .container .form form{
+    border: 1px solid black;
+    display: grid;
+    grid-template-rows:repeat(3,1fr);
+    width: 100%;
+    height: 300px;
+    align-items:center;
+    background-color:darkgray;
+    border-radius:20px;
+    box-shadow: 0 0 5px #000;
+}
+
+.section-1 .container .form form input{
+    margin: 0 auto;
+    width: 90%;
+    height: 50px;
+    box-shadow: 0 0 5px #000;
+}
+
+.section-1 .container .form form #submit{
+    width: 30%;
+    height: 30px;
+    border-radius:15px;
+}
+
+.section-1 .container .information{
+    margin: 5px 10px;
+    padding: 15px;
+}
+
+.section-1 .container .information span{
+    color: #FFD700;
+    text-shadow: 0 0 5px #000;
+}
+
+@media(max-width:992px){
+    .section-1 .container{
+        height: 700px;
+    }
+    .section-1 .container .in-container{
+        display:block;
+    }
+
+    .section-1 .container .in-container .form{
+        width: 100%;
+    }
+}
+
+footer{
+    color: #ffffff;
+    background-color: #2F4F4F;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    position: relative;
+    margin: 5px 10px;
+    padding: 5px;
+}
+
+footer ul li{
+    list-style-type: none;
+}
+
+footer a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+footer a:hover{
+    color: #FFD700;
+}
+
+footer .section-4 img{
+    width: 30px;
+    height: 30px;
+}

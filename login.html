@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--Meta-->
+<title>Luxurious Outfit</title>
+<meta charset="UTF-8">
+<meta name="author" content="Marwan Abu Ghazaleh">
+<meta name="description" content="This Site sells Luxurious shoes / Sport shoes / Classic shoes">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--Links-->
+<link rel="stylesheet" href="css/login.css">
+<link rel="icon" href="image/logo.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+<!--Header-->
+<header>
+    <div class="container">
+        <div class="logo">
+            <img src="image/logo.png" alt="logo of the site" width="150px" height="150px">
+        </div>
+        <nav>
+            <div class="navbar">
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="">Categories</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">FAQ</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            </div>
+            <div class="basket-shopping">
+                <a href="#"><i class="fas fa-shopping-basket" style="color:#ffffff;"></i></a>
+            </div>
+            <div class="Search">
+                <form class="search-form" action="/search" method="get">
+                    <input class="search-input" type="text" name="query" placeholder="Search..." />
+                    <button class="search-submit" type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+            <div class="log-reg">
+                <a href="login.html">LOGIN</a>
+                <a href="">REGISTER</a>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<!--Section-1-->
+<section class="section-1">
+    <div class="container">
+        <h2>LOGIN</h2>
+        <div class="in-container">
+        <div class="form">
+            <form method="get" action="server/server.php">
+                <input type="email" placeholder="Email" name="email" id="email">
+                <input type="password" placeholder="Password" name="password" id="password">
+                <input id="submit" type="submit" value="Login">
+            </form>
+        </div>
+        <div class="information">
+            <h3>Notice:</h3>
+            <ol>
+                <li>Activate two-factor authentication to increase the security of your account</li>
+                <li>Change your password every month</li>
+                <li>Dont give anyone your <span>password</span> or information about your <span>bank accounts</span></li>
+            </ol>
+        </div>
+        </div>
+    </div>
+
+<!--FOOTER-->
+<footer>
+    <div class="section-1">
+        <ul>
+            <li><a href="">Support</a></li>
+            <li><a href="">Feedback</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </div>
+    <div class="section-2">
+        <ul>
+            <li><a href="">Polices</a></li>
+            <li><a href="">Privacy policy</a></li>
+            <li><a href="">Terms of service</a></li>
+        </ul>
+    </div>
+    <div class="section-3">
+        <ul>
+            <li>Amman-Jo</li>
+            <li>TAJ Lifestyle Center, Prince Hashem Bin Al Hussein St 72</li>
+            <li>Copyright © 2023 for Luxurious-Outfit</li>
+        </ul>
+    </div>
+    <div class="section-4">
+        <h3>Follow us:</h3>
+        <a href=""><img src="image/icon-1.png" alt="facebook"></a>
+            <a href=""><img src="image/icon-2.png" alt="Instagram"></a>
+    </div>
+</footer>
+
+</section>
+
+</body>
+</html>
